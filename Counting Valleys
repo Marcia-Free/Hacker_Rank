@@ -1,0 +1,46 @@
+function countingValleys(steps, path) {
+    let seaLevel = 0
+    let valleys = 0
+    let hills = 0
+
+    for (let i = 0; i <= path.length; i++) {
+        let step = path[i]  
+        
+        if (step === 'U' && seaLevel === -1) {
+            seaLevel++
+            valleys++ 
+        }
+        else if(step === 'D' && seaLevel === 1) {
+            seaLevel--
+            hills++
+        }
+        else if(step === 'U') {
+                seaLevel++
+        }
+        else if(step === 'D') {
+            seaLevel--
+        }
+        
+        // switch(step) {
+        //     case step === 'U' && seaLevel === -1:
+        //         seaLevel++
+        //         valleys++
+        //     break;
+            
+        //     case step === 'D' && seaLevel === 1:
+        //         seaLevel--
+        //         hills++
+        //     break;
+            
+        //     case step === 'U':
+        //         seaLevel++
+        //     break;
+            
+        //     case step === 'D':
+        //         seaLevel--
+        //     break;   
+        // }
+    }   
+    return valleys
+
+}
