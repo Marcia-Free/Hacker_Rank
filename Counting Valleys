@@ -21,25 +21,6 @@ function countingValleys(steps, path) {
             seaLevel--
         }
         
-        // switch(step) {
-        //     case step === 'U' && seaLevel === -1:
-        //         seaLevel++
-        //         valleys++
-        //     break;
-            
-        //     case step === 'D' && seaLevel === 1:
-        //         seaLevel--
-        //         hills++
-        //     break;
-            
-        //     case step === 'U':
-        //         seaLevel++
-        //     break;
-            
-        //     case step === 'D':
-        //         seaLevel--
-        //     break;   
-        // }
     }   
     return valleys
 
