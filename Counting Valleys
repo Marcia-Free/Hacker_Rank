@@ -1,4 +1,5 @@
 function countingValleys(steps, path) {
+
     let seaLevel = 0
     let valleys = 0
     let hills = 0
